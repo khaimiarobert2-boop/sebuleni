@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SEBULENI COLLECTIVE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles6.css" />
+  <a href="#about" class="nav-link">About Us</a>
+</head>
+
+<body>
+
+  <div id="cover" class="cover-overlay" role="dialog" aria-modal="true" aria-label="Welcome to TrendyB">
+    <canvas id="cover-canvas" class="cover-canvas" aria-hidden="true"></canvas>
+
+    <div class="cover-panel" role="document">
+      <div class="cover-brand">
+        <h1>Sebuleni collective</h1>
+        <p class="tag">TrendyB Fashion House Style drop Sebuleni Duka</p>
+      </div>
+
+      <p class="cover-sub">Design-driven fashion, made by hand enter to shop the latest drop.</p>
+
+      <div class="cover-cta">
+        <button id="enter-site" class="btn">Enter TrendyB</button>
+        <button id="skip-cover" class="btn ghost">Skip</button>
+      </div>
+
+      <button id="cover-close" class="cover-close" aria-label="Close cover"></button>
+    </div>
+  </div>
+
+  <div class="promo-strip" role="note">
+    <span class="promo-strip-text">New Style Drop is live limited pieces, no restocks.</span>
+    <a href="#style-drop" class="promo-strip-link">Shop now</a>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>NEW DROP EVERY MONTH</span>
+      <span>•</span>
+      <span>HANDMADE IN NAIROBI</span>
+      <span>•</span>
+      <span>SEBULENI DUKA SHOP THE CORNER STORE</span>
+      <span>•</span>
+      <span>LIMITED PIECES, NO RESTOCKS</span>
+      <span>•</span>
+      <span>NEW DROP EVERY MONTH</span>
+      <span>•</span>
+      <span>HANDMADE IN NAIROBI</span>
+      <span>•</span>
+      <span>SEBULENI DUKA SHOP THE CORNER STORE</span>
+      <span>•</span>
+      <span>LIMITED PIECES, NO RESTOCKS</span>
+      <span>•</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <h1>SEBULENI COLLECTIVE FASHION AND DESIGN</h1>
+        <p class="tag">TrendyBFashion House Style drop Sebuleni Duka</p>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#style-drop" class="nav-link">Style Drop</a>
+        <a href="#lookbook" class="nav-link">Lookbook</a>
+        <a href="#sebuleni-duka" class="nav-link">Sebuleni Duka</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="contact-mini">
+          <a href="tel:0723818154" class="phone" id="phone-link">0734818154</a>
+          <button id="copy-phone" class="icon-btn" title="Copy phone">Copy</button>
+        </div>
+        <div class="mini-cart">
+          <button id="wish-btn" class="icon-btn" title="Wishlist"> <span id="wish-count"></span>🤍</button>
+          <button id="cart-btn" class="icon-btn" title="Cart"> <span id="cart-count"></span>🛒</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="panel">
+      <div class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Est. Nairobi</p>
+          <h2>Design-driven fashion, made by hand, worn on your terms.</h2>
+          <p class="lead">TrendyB is a Kenyan-born womenswear brand</p>
+          <p>From runway-ready pieces to the small treasures at Sebuleni Duka, every item here was cut, beaded, or
+            welded by someone whose name you'll actually know.</p>
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#style-drop" class="btn" id="explore-drop">Explore Style Drop</a>
+        <a href="#lookbook" class="btn ghost">Have a look at our most stylish contents</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <dt>Monthly</dt>
+          <dd>New style drops</dd>
+        </div>
+        <div>
+          <dt>1:1</dt>
+          <dd>Handmade, not mass-produced</dd>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <img src="./images/sample.png" loading="lazy" alt="An example ofTrendyB design" />
+      </figure>
+    </section>
+    <section id="style-drop" class="panel hidden" aria-labelledby="style-drop-title">
+      <p class="eyebrow">Style Drop</p>
+      <h2 id="style-drop-title">TrendyB's collection </h2>
+      <p class="lead">Here is the sample of limited pieces released monthly once they're gone, they're gone. Reserve
+        now or ask to be
+        notified on restock.</p>
+
+      <div class="controls">
+        <label for="drop-filter">Filter</label>
+        <select id="drop-filter">
+          <option value="all">All</option>
+          <option value="winter">Winter wear</option>
+          <option value="summer">Summer wear</option>
+          <option value="All weather">All weather</option>
+          <option value="accessories">Accessories</option>
+        </select>
+
+        <label for="search">Search</label>
+        <input id="search" placeholder="Search items" />
+      </div>
+
+      <div class="grid" id="drop-grid">
+        <article class="card" data-category="women" data-id="p1">
+          <div class="card-media">
+            <img src="./images/3390.jpg" loading="lazy"
+              alt="High-Low Asymmetrical Tunic Top and Wide-Leg Palazzo Pants" />
+          </div>
+          <div class="card-body">
+            <h3>High-Low Asymmetrical Tunic Top and Wide-Leg Palazzo Pants</h3>
+            <p class="designer">TrendyB fashion house design team</p>
+            <div class="card-actions">
+              <button class="btn detail-btn" data-id="p1">View</button>
+              <button class="btn ghost add-cart" data-id="p1">Add to Cart🛒</button>
+              <button class="icon-btn wish" data-id="p1" title="Add to wishlist">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-category="men" data-id="p2">
+          <div class="card-media">
+            <img src="./images/3436.jpg" loading="lazy" alt="Duster and Co-ord Set" />
+          </div>
+          <div class="card-body">
+            <h3>Duster and Co-ord Set</h3>
+            <p class="designer">TrendyB fashion house design team</p>
+            <div class="card-actions">
+              <button class="btn detail-btn" data-id="p2">View</button>
+              <button class="btn ghost add-cart" data-id="p2">Add to Cart🛒</button>
+              <button class="icon-btn wish" data-id="p2" title="Add to wishlist">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-category="accessories" data-id="p3">
+          <div class="card-media">
+            <img src="./images/3504.jpg" loading="lazy" alt="Tie-Dye and Wide-Leg Palazzo Pants" />
+          </div>
+          <div class="card-body">
+            <h3>Tie-Dye and Wide-Leg Palazzo Pants</h3>
+            <p class="designer">TrendyB fashion house design team</p>
+            <div class="card-actions">
+              <button class="btn detail-btn" data-id="p3">View</button>
+              <button class="btn ghost notify-me" data-id="p3">"Add to cart">🛒</button>
+              <button class="icon-btn wish" data-id="p3" title="Add to wishlist">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-category="women" data-id="p4">
+          <div class="card-media">
+            <img src="./images/3507.jpg" loading="lazy" alt="Chambray High-Low Shirt Dress with Ankara/Kitenge Trim" />
+          </div>
+          <div class="card-body">
+            <h3>Chambray High-Low Shirt Dress with Ankara/Kitenge Trim</h3>
+            <p class="designer">TrendyB fashion house design team</p>
+            <div class="card-actions">
+              <button class="btn detail-btn" data-id="p4">View</button>
+              <button class="btn ghost add-cart" data-id="p4">Add to Cart🛒</button>
+              <button class="icon-btn wish" data-id="p4" title="Add to wishlist">🤍</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="lookbook" class="panel hidden" aria-labelledby="lookbook-title">
+      <p class="eyebrow">Lookbook</p>
+      <h2 id="lookbook-title">Styled for the season</h2>
+      <p class="lead">A few frames from our latest shoot click any image for a closer look.</p>
+      <div class="look-grid">
+        <div class="look-item">
+          <img src="./images/look1.jpg" loading="lazy" alt="Look 1 interior setup of our Studio" />
+        </div>
+        <div class="look-item">
+          <img src="./images/just.jpeg" loading="lazy" alt="Look 2 Waistcoat" />
+        </div>
+        <div class="look-item">
+          <img src="./images/jk.jpeg" loading="lazy"
+            alt="Look 3  African Print Mixed-Pattern Kimono Duster Jacket Set," />
+        </div>
+        <div class="look-item">
+          <img src="./images/look4.jpg" loading="lazy" alt="Look 4 Curated Footwear Collection" />
+        </div>
+        <div class="look-item">
+          <img src="./images/look5.jpg" loading="lazy" alt="Look 5 A-Line Cami Maxi Dress" />
+        </div>
+        <div class="look-item">
+          <img src="./images/look6.jpg" loading="lazy" alt="Look 6  A-Line Cami Maxi Dress" />
+        </div>
+        <div class="look-item">
+          <img src="./images/lookbook6.jpg" loading="lazy" alt="Look 7 A-Line Cami Maxi Dress" />
+        </div>
+        <div class="look-item">
+          <img src="./images/6076.jpg" loading="lazy" alt="Look 8 Effortless Layering, Defined" />
+        </div>
+        <div class="look-item">
+          <img src="./images/lookbook8.jpg" loading="lazy" alt="Look 9 Asymmetrical Drama." />
+        </div>
+        <div class="look-item">
+          <img src="./images/lookbook9.jpg" loading="lazy" alt="Look 10 Curating Your Next Statement." />
+        </div>
+      </div>
+    </section>
+
+    <section id="sebuleni-duka" class="panel sebuleni-bg visible" aria-labelledby="sebuleni-duka-title">
+      <p class="eyebrow">Sebuleni Duka</p>
+      <h2 id="sebuleni-duka-title">The corner shop</h2>
+      <p class="lead">"Sebuleni duka provides modern, ready-to-wear women's apparel".</p>
+      <div class="sebuleni-grid">
+        <div class="sebuleni-item">
+          <img src="./images/sebuleni.jpg" loading="lazy" alt="Sebuleni Duka" />
+        </div>
+        <div class="sebuleni-item">
+          <img src="./images/sebuleni1.jpg" loading="lazy" alt="Swirl and Medallion Ankara Prints:" />
+        </div>
+        <div class="sebuleni-item">
+          <img src="./images/sebuleni2.jpg" loading="lazy" alt="Kaftans and Shift Dresses" />
+        </div>
+        <div class="sebuleni-item">
+          <img src="./images/sebuleni3.jpg" loading="lazy" alt="vibrant resort wear" />
+        </div>
+        <div class="sebuleni-item">
+          <img src="./images/sebuleni4.jpg" loading="lazy" alt="Ankara styles" />
+        </div>
+        <div class="sebuleni-item">
+          <img src="./images/sebuleni5.jpg" loading="lazy"
+            alt="Welcome to the living room where Style Meets Connection" />
+        </div>
+        <div class="sebuleni-item">
+          <img src="./images/sebuleni6.jpg" loading="lazy" alt="Wearable Art, Rooted in Tradition." />
+        </div>
+        <div class="sebuleni-item">
+          <img src="./images/sebuleni7.jpg" loading="lazy" alt="Expressive style across every generation" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="panel hidden" aria-labelledby="about-title">
+      <p class="eyebrow">Our Story</p>
+      <h2 id="about-title">About TrendyB</h2>
+      <p class="lead">
+        TrendyB is a Kenyan-born womenswear brand that empowers women to dress boldly, confidently, and intentionally
+        without compromising professionalism at the same time look powerful, polished and unapologetically stylish. Our
+        collections are designed to celebrate individuality, self-expression, and the art of dressing well. Each piece
+        is thoughtfully crafted with attention to detail, quality fabrics, and a commitment to sustainability.
+      </p>
+      <div class="designer-grid">
+        <article class="designer-card">
+          <div class="designer-avatar">
+            <img src="./images/sebuleni1.jpg" loading="lazy" alt="TrendyB studio" />
+          </div>
+          <div class="designer-info">
+            <h3>Where it started</h3>
+            <p>
+              What began as a single rack of hand-finished pieces has grown into a
+              fashion house that partners with independent designers across Nairobi
+              each with their own name, story, and signature style.
+            </p>
+          </div>
+        </article>
+
+        <article class="designer-card">
+          <div class="designer-avatar">
+            <img src="./images/look4.jpg" loading="lazy" alt="TrendyB craftsmanship" />
+          </div>
+          <div class="designer-info">
+            <h3>How we work</h3>
+            <p>
+              Every drop is limited and handmade cut, beaded, sewn, or welded by
+              someone whose name is on the tag. When a piece sells out, it's gone;
+              we don't restock mass runs.
+            </p>
+          </div>
+        </article>
+
+        <article class="designer-card">
+          <div class="designer-avatar">
+            <img src="./images/sebuleni3.jpg" loading="lazy" alt="TrendyB community" />
+          </div>
+          <div class="designer-info">
+            <h3>Sebuleni Duka</h3>
+            <p>
+              Our corner shop brings the same design-first philosophy to
+              everyday, ready-to-wear pieces modern basics with the same
+              handmade care as our runway drops.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="hero-ctas" style="margin-top: 2rem;">
+        <a href="#contact" class="btn ghost">Get in Touch</a>
+      </div>
+    </section>
+    <section id="contact" class="panel hidden" aria-labelledby="contact-title">
+      <div class="contact-hero">
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="contact-title">Contact Us</h2>
+      </div>
+
+      <div class="contact-split">
+        <div>
+          <div class="contact-intro">
+            <p>For any inquiries, collaborations, wholesale orders, or just to say hello
+              we'd love to hear from you. Reach out, and let's connect.</p>
+          </div>
+
+          <div class="faq" id="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How can I get in touch with TrendyB for collaborations?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>We're always open to new creative partnerships. Send us a message
+                  through the form below or reach out directly by phone/WhatsApp, and
+                  our team will get back to you.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Where can I find information on new Style Drops?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>New drops go live monthly and are announced on the Style Drop page
+                  and our social channels. Pieces are limited once they're gone,
+                  they don't restock.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How can I reach customer support?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Call or WhatsApp us directly at 0734818154, or use the contact
+                  form below we typically reply within a business day.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How do I purchase TrendyB products?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Browse the Style Drop or Sebuleni Duka sections, add items to your
+                  cart, and check out or contact us directly to reserve a piece
+                  before it sells out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-groups">
+          <div class="contact-group">
+            <h3>Studio</h3>
+            <p>TrendyB Fashion House</p>
+            <p>Nairobi, Kenya</p>
+          </div>
+
+          <div class="contact-group">
+            <h3>Sales &amp; Orders</h3>
+            <p>Phone / WhatsApp: <a href="tel:0734818154">0734818154</a></p>
+          </div>
+
+          <div class="contact-group">
+            <h3>Collaborations &amp; Press</h3>
+            <p>For partnership or press inquiries, reach us via phone or the form
+              below and our team will follow up.</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <label for="c-name">Name</label>
+        <input id="c-name" name="name" type="text" required placeholder="Your name" />
+
+        <label for="c-email">Email</label>
+        <input id="c-email" name="email" type="email" required placeholder="you@example.com" />
+
+        <label for="c-message">Message</label>
+        <textarea id="c-message" name="message" rows="4" required placeholder="How can we help?"></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <p id="contact-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Sebuleni Collective</h3>
+        <p>Design-driven apparel, made in Nairobi.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#style-drop" class="nav-link">Style Drop</a>
+        <a href="#sebuleni-duka" class="nav-link">Sebuleni Duka</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; 2026 Sebuleni Collective</p>
+        <p>Shop: <a href="tel:0734818154">0734818154</a> · Studio: <a href="tel:0734818154">0734818154</a></p>
+        <p>Follow us on social media</p>
+        <p>&copy; Facebook, sebuleni collective</p>
+        <p>&copy; Instagram, sebuleni collective.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#about" class="nav-link">About Us</a>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-panel" id="modal-panel">
+      <button class="modal-close" id="modal-close" aria-label="Close"></button>
+      <div id="modal-content" class="modal-content"></div>
+    </div>
+  </div>
+  <a href="https://wa.me/254794756621" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+    Chat on WhatsApp
+  </a>
+
+  <div id="cc-banner">
+    <p>
+      We use cookies to improve your experience, analyze site traffic, and personalize content.
+      You can accept all cookies, reject non-essential ones, or customize your preferences.
+      <a href="#" id="cc-learn-more" onclick="ccOpenModal(); return false;">Learn more</a>
+    </p>
+    <div class="cc-banner-actions">
+      <button class="cc-btn cc-btn-settings" onclick="ccOpenModal()">Customize</button>
+      <button class="cc-btn cc-btn-reject" onclick="ccRejectAll()">Reject All</button>
+      <button class="cc-btn cc-btn-accept" onclick="ccAcceptAll()">Accept All</button>
+    </div>
+  </div>
+
+  <div id="cc-modal-overlay">
+    <div id="cc-modal">
+      <h2>Cookie Preferences</h2>
+      <p class="cc-desc">Choose which categories of cookies you allow. Necessary cookies are always on because the site
+        can't function properly without them.</p>
+
+      <div class="cc-category">
+        <div>
+          <div class="cc-category-title">Necessary</div>
+          <div class="cc-category-desc">Required for core site functionality like security, navigation, and load
+            balancing.</div>
+        </div>
+        <label class="cc-switch">
+          <input type="checkbox" checked disabled>
+          <span class="cc-slider"></span>
+        </label>
+      </div>
+
+      <div class="cc-category">
+        <div>
+          <div class="cc-category-title">Analytics</div>
+          <div class="cc-category-desc">Helps us understand how visitors interact with the site so we can improve it.
+          </div>
+        </div>
+        <label class="cc-switch">
+          <input type="checkbox" id="cc-cat-analytics">
+          <span class="cc-slider"></span>
+        </label>
+      </div>
+
+      <div class="cc-category">
+        <div>
+          <div class="cc-category-title">Marketing</div>
+          <div class="cc-category-desc">Used to show relevant ads and measure the effectiveness of campaigns.</div>
+        </div>
+        <label class="cc-switch">
+          <input type="checkbox" id="cc-cat-marketing">
+          <span class="cc-slider"></span>
+        </label>
+      </div>
+
+      <div class="cc-category">
+        <div>
+          <div class="cc-category-title">Preferences</div>
+          <div class="cc-category-desc">Remembers choices you make (like language or region) for a more personalized
+            experience.</div>
+        </div>
+        <label class="cc-switch">
+          <input type="checkbox" id="cc-cat-preferences">
+          <span class="cc-slider"></span>
+        </label>
+      </div>
+
+      <div class="cc-modal-actions">
+        <button class="cc-btn cc-btn-reject" onclick="ccRejectAll()">Reject All</button>
+        <button class="cc-btn cc-btn-settings" style="border-color:#9ca3af; color:#111827;"
+          onclick="ccSavePreferences()">Save Preferences</button>
+        <button class="cc-btn cc-btn-accept" onclick="ccAcceptAll()">Accept All</button>
+      </div>
+    </div>
+  </div>
+  <div id="cc-settings-link" onclick="ccOpenModal()">Cookie Settings</div>
+
+  <script src="script6.js"></script>
+</body>
+
+</html>
