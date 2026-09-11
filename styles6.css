@@ -1618,3 +1618,30 @@ input:disabled+.cc-slider {
 #cc-settings-link:hover {
   opacity: 1;
 }
+
+.nav-toggle {
+  display: none;
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+.nav-toggle svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--paper-text);
+  stroke-width: 2;
+  fill: none;
+}
