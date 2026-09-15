@@ -1645,3 +1645,17 @@ input:disabled+.cc-slider {
   stroke-width: 2;
   fill: none;
 }
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  color: #333;
+  /* match your brand palette */
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
